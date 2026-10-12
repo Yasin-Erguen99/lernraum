@@ -1,0 +1,2 @@
+# Optional: extracts searchable text and page references from PDF files.
+pypdf>=6.0,<7.0

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7463df">
+  <meta name="description" content="Dein lokaler Lernraum für Module, Materialien und nachhaltiges Lernen.">
+  <title>Lernraum · Dein Studium, sortiert.</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+  <script src="/dialogs.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Hauptnavigation">
+      <a class="brand" href="#overview" aria-label="Lernraum Startseite"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>lernraum<span class="brand-dot">.</span></span></a>
+      <div class="workspace-label"><span class="workspace-symbol">L</span><div>Mein Studium<small>Dein persönlicher Lernraum</small></div></div>
+      <span class="nav-label">ARBEITSPLATZ</span>
+      <nav id="main-nav"></nav>
+      <div class="nav-section-heading"><span class="nav-label">MEINE MODULE</span><button class="icon-button" data-action="new-module" aria-label="Modul hinzufügen" title="Modul hinzufügen">+</button></div>
+      <nav class="module-nav" id="module-nav" aria-label="Meine Module"></nav>
+      <div class="sidebar-bottom"><div class="sidebar-tip"><span class="tip-sparkle">✦</span><strong>Kleine Schritte. Großes Wissen.</strong><p>Ein bisschen heute ist besser als alles morgen.</p></div><button class="profile" data-action="settings"><span class="avatar">L</span><span>Mein Lernraum<small><i class="status-dot"></i>Lokal gespeichert</small></span><span class="profile-settings" aria-hidden="true">⚙</span></button></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" data-action="toggle-menu" aria-label="Navigation öffnen">☰</button><span class="breadcrumb-icon" id="breadcrumb-icon"></span><span>Mein Studium</span><span class="breadcrumb-separator">/</span><strong id="breadcrumb">Überblick</strong></div><div class="topbar-right"><button class="search-trigger" data-action="search"><span id="search-icon"></span><span>Alles durchsuchen</span><kbd>Strg K</kbd></button><span class="local-badge"><i class="status-dot"></i>Auf deinem Rechner</span><button class="icon-button" data-action="help" aria-label="Hilfe" title="Hilfe">?</button></div></header>
+      <main id="main" tabindex="-1"><div class="loading"><span class="loading-spinner"></span>Dein Lernraum wird geöffnet …</div></main>
+      <footer class="workspace-footer"><span>Ein Ort für alles, was du noch verstehen wirst.</span><span><i class="status-dot"></i>Deine Daten bleiben lokal.</span></footer>
+    </div>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

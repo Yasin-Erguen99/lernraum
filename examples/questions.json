@@ -1,0 +1,36 @@
+{
+  "module_id": "REPLACE_WITH_TARGET_MODULE_UUID",
+  "unit_id": "REPLACE_WITH_TARGET_UNIT_UUID",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Welche Aussage wird auf der angegebenen Quelle gestützt?",
+      "options": [
+        "Aussage aus dem Material",
+        "Eine plausible, aber dort nicht belegte Aussage",
+        "Eine gegenteilige Aussage"
+      ],
+      "correct_index": 0,
+      "answer": "Aussage aus dem Material",
+      "explanation": "Die Begründung sollte die konkrete Passage aus der Quelle nennen.",
+      "topic": "Beispielthema",
+      "difficulty": 1,
+      "source_material_id": "REPLACE_WITH_SOURCE_MATERIAL_UUID",
+      "source_page": 1,
+      "is_ai": true
+    },
+    {
+      "type": "free_text",
+      "prompt": "Erkläre den zentralen Begriff mit eigenen Worten.",
+      "options": [],
+      "correct_index": null,
+      "answer": "Hier die fachlich richtige Kernaussage aus dem Material eintragen.",
+      "explanation": "Eine Musterlösung hilft beim Vergleichen, ersetzt aber keine eigene Antwort.",
+      "topic": "Beispielthema",
+      "difficulty": 2,
+      "source_material_id": "REPLACE_WITH_SOURCE_MATERIAL_UUID",
+      "source_page": 1,
+      "is_ai": true
+    }
+  ]
+}
